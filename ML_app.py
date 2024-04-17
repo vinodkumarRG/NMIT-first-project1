@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 import joblib
 
-from skelearn.tree import DecisionTreeClassifier
+from sklearn.tree import DecisionTreeClassifier
 # loading up the classification model we created
 
 model =DecisionTreeClassifier(criterion='gini',max_depth=8, min_samples_leaf=5, random_state=0)

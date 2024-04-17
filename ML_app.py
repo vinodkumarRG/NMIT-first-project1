@@ -14,11 +14,11 @@ model = joblib.load('finalized_model.joblib')
 # Define the prediction function
 def predict(Buying, Maint,  Doors, Persons, Lug_boot, Safety):
     if Safety == 'med':
-        safety = 1
+       safety = 1
     elif Safety == 'high':
-        safety = 2
+         safety = 2
     elif Safety == 'low':
-        safety = 3
+         safety = 3
     df = pd.DataFrame([[Buying, Maint, Doors, Persons, Lug_boot, safety]], columns=['Buying', 'Maint',  'Doors','Persons', 'Lug_boot', 'Safety'])
     prediction = model.predict([[Buying, Maint, Doors, Persons, Lug_boot, safety]])
     return prediction

@@ -19,9 +19,9 @@ def predict(Buying, Maint, Doors, Persons, Lug_boot, Safety):
   if Safety == 'med':
     safety == 1
   elif Safety =='high':
-  safety == 2
+     safety == 2
   elif Safety == 'low':
-  safety = 3
+     safety = 3
   df =pd.DataFrame([Buying, Maint, Doors, Persons, Lug_boot, Safety]),
   columns=['buying','maint','doors','persons','persons','lug_boot','safty']
   prediction =model.predict([Buying, Maint, Doors, Persons, Lug_boot, Safety])

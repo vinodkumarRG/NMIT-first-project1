@@ -51,7 +51,7 @@ def predict(Buying, Maint, Doors, Persons, Lug_boot, Safety):
 
   Lug_boot=st.number_input('lug_boot:', min_value=1, max_value=3, value=1)
 
-  Safety st.radio('safety:', ('med', 'high', 'low'))
+  Safety=st.radio('safety:', ('med', 'high', 'low'))
 
   if st.button('submit_car_Infos'):
   cal_eval=predict(Buying, Maint, Doors, Persons, Lug_boot, Safety)
